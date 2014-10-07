@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com.showkit.cordova.showkit"
+    version="1.0.2">
+
+    <name>ShowKitCordovaPlugin</name>
+    <description>Add video chat, screen sharing and co-navigation to your Cordova Application</description>
+    <license>Apache 2.0</license>
+    <keywords>showkit,showkit</keywords>
+
+    <!-- ios -->
+    <platform name="ios">
+      <asset src="www/ShowKit.js" target="ShowKit.js" />
+
+      <header-file src="src/ios/ShowKitPlugin.h" />
+      <source-file src="src/ios/ShowKitPlugin.m" />
+
+      <framework src="src/ios/ShowKit.framework" custom="true" />
+      <framework src="OpenGLES.framework" />
+      <framework src="AVFoundation.framework" />
+      <framework src="QuartzCore.framework" />
+      <framework src="CFNetwork.framework" />
+      <framework src="CoreVideo.framework" />
+      <framework src="CoreGraphics.framework" />
+      <framework src="CoreMedia.framework" />
+      <framework src="AudioToolbox.framework" />
+      <framework src="SystemConfiguration.framework" />
+      <framework src="SystemConfiguration.framework" />
+      <framework src="libresolv.dylib" />
+      <framework src="libz.dylib" />
+
+      <!-- Adopts project's config.xml to include the OpenTokPlugin and domain whitelists -->
+      <config-file target="config.xml" parent="/*/plugins">
+          <feature name="ShowKitPlugin">
+              <param name="ios-package" value="ShowKitPlugin"/>
+          </feature>
+      </config-file>
+      <config-file target="config.xml" parent="/*">
+        <access origin="*" />
+      </config-file>
+    </platform>
+  </plugin>
