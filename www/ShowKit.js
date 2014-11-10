@@ -105,6 +105,7 @@ sendMessage: function (msg)
     {
         cordova.exec(null,null,"ShowKitPlugin","sendDataUDP",[msg]);
     }
+    ,
     
 sendDataUDP: function (msg)
     {
