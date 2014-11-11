@@ -29,8 +29,8 @@
         <div class="app">
             <h1>ShowKit-PhoneGapPlugin</h1>
         </div>
-        <script type="text/javascript" src="phonegap.js"></script>
-        <script type="text/javascript" src="js/ShowKit.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="ShowKit.js"></script>
         
         <script type="text/javascript">
             function connectionStateChanged(state)
@@ -86,7 +86,7 @@
         <h1>Welcome to ShowKit</h1>
         
         <form name="call_form">
-            Username: <input type="username" name="username" autocorrect="off" autocapitalize="off">
+            Username: <input type="text" name="username" autocorrect="off" autocapitalize="off">
         </form>
         
         <button onclick="makeCall()">make call</button>
