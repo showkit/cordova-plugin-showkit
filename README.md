@@ -45,8 +45,3 @@ Note that demo and plugin is tested on Cordova CLI 4.0.0 and Ionic CLI 1.2.8.
 8. Open the file 'showkit-test/platforms/ios/showkit-test.xcodeproj' in Xcode and **add** `-lc++` to the `Other Linker Flags`, see next:
 > **NOTE:** Change this settings for the showkit-test target (not project)
 ![Building IOS project, solve linker errors](http://oi58.tinypic.com/2sbtyqd.jpg)
-
-9. Also set `Build Active Architecture Only` to `No` and remove `armv64` from `Valid Architectures`, see next:
-![Building IOS project, correct architectures](http://oi62.tinypic.com/27ys74g.jpg)
-
-10. Repeat step 9 also for the CordovaLib target.
