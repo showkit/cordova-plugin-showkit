@@ -45,3 +45,5 @@ Note that demo and plugin is tested on Cordova CLI 4.0.0 and Ionic CLI 1.2.8.
 8. Open the file 'showkit-test/platforms/ios/showkit-test.xcodeproj' in Xcode and **add** `-lc++` to the `Other Linker Flags`, see next:
 > **NOTE:** Change this settings for the showkit-test target (not project)
 ![Building IOS project, solve linker errors](http://oi58.tinypic.com/2sbtyqd.jpg)
+
+9. Go to http://showkit.com/releases and download the latest ShowKit iOS Framework.  Unzip and drag the ShowKit.framework and ShowKitResources.bundle file to your XCode project Frameworks
