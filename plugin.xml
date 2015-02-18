@@ -15,7 +15,12 @@
       <header-file src="src/ios/ShowKitPlugin.h" />
       <source-file src="src/ios/ShowKitPlugin.m" />
 
+      <resource-file src="src/ios/ShowKitResources.bundle" />
+
       <framework src="src/ios/ShowKit.framework" custom="true" />
+      <framework src="VideoToolbox.framework" />
+      <framework src="CoreImage.framework" />
+      <framework src="Security.framework" />
       <framework src="OpenGLES.framework" />
       <framework src="AVFoundation.framework" />
       <framework src="QuartzCore.framework" />
